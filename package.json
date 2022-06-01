@@ -1,0 +1,26 @@
+{
+  "name": "avanzado",
+  "version": "1.0.0",
+  "description": "Curso avanzado de JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.info('testing')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacMujica/LE-Course-JS-Avanzado.git"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "promise",
+    "api",
+    "html"
+  ],
+  "author": "Isaac Mujica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacMujica/LE-Course-JS-Avanzado/issues"
+  },
+  "homepage": "https://github.com/IsaacMujica/LE-Course-JS-Avanzado#readme"
+}

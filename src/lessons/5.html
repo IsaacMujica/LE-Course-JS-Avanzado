@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tagged Templates</title>
+	<style>
+		body {
+			display: flex;
+			margin: 0;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			font-family: system-ui;
+			background-color: #f49097;
+			font-size: 1.5em;
+			text-shadow: 1px 1px rgba(0,0,0, .5);
+		}
+
+		#content {
+			height: fit-content;
+			text-align: center;
+			color: #f2f5ff;
+		}
+
+		strong {
+			color: #f5e960;
+			padding: .15em .4em;
+			background-color: #dfb2f4;
+			border-radius: 20px;
+			border: 2px solid #f2f5ff;
+		}
+	</style>
+</head>
+<body>
+	<p id="main-p-tag" style="display: none;">El trabajo duro supera al talento natural</p>
+	<div id="content" class="content"></div>
+<script src="../js/lessons/5.js" type="module"></script>
+</body>
+</html>
