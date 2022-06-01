@@ -26,10 +26,10 @@ export function render(component, container) {
 	container.innerHTML = component
 }
 
-export const styled = trackMethodCalls({})
+export const styled = handlerTrackCalls({})
 
 
-function trackMethodCalls(obj) {
+function handlerTrackCalls(obj) {
   const handler = {
     // anytime we do obj.someMethod
     // we actually return the interceptedMethod instead
