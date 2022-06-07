@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Usando nuestro Redux - Quemador de calorías</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/10/styles.css">
+</head>
+<body>
+  <main class="container-fluid">
+    <div class="wrapper">
+      <details>
+        <summary>
+          ⭐️ explicación
+        </summary>
+        <p>El libro, Convert Anything to Calories, llegó a la conclusión de que, en promedio, una persona con un dedo
+          indice
+          de
+          10.8 cm^3 y de 11.7 gramos necesitará muuuchos clicks para conservar la línea. Se requieren 16.7 micromoles de
+          adenosín
+          trifosfato (la molécula que transporta energía entre las células) para mover un gramo del cuerpo por un
+          segundo,
+          y
+          como
+          hay 7.3 calorías en un mol (la medida de cantidad de una sustancia) de adenosín trifosfato, en teoría, cada
+          click
+          del
+          mouse debería quemar 1.42 calorías. Aunque el cálculo asume el movimiento de todo el músculo, por lo que la
+          cantidad
+          real puede variar un poco.</p>
+        <p>Pero resulta que es sábado y tienes hambre. treinta minutos después te llega una pizza (1,835kCal) con una
+          coca
+          (97kCal), tendrías que hacer 1,360,563 clicks para quemar la cena. Y cómo es sábado seguramente involucrará
+          unas cuantas
+          bebidas alcohólicas: en un Gin & Tonic (120kCal) hay 84,507 clicks, y 131,690.14 por cada cerveza que
+          consumas. En otras
+          palabras, con 427 clicks en promedio por día, la computadora no es un buen ejercicio.
+        </p>
+      </details>
+      <h1>Quemador de calorías</h1>
+      <p id="result" class="result"></p>
+      <div class="row">
+      	<div class="col-6 col-sm">
+      		<p id="pizza" class="emoji pizza m-0"></p>
+      	</div>
+      	<div class="col-6 col-sm">
+      		<p id="coke" class="emoji coke m-0"></p>
+      	</div>
+      	<div class="col-6 col-sm">
+      		<p id="ginTonic" class="emoji ginTonic m-0"></p>
+      	</div>
+      	<div class="col-6 col-sm">
+      		<p id="beer" class="emoji beer m-0"></p>
+      	</div>
+      	<div class="col-12">
+      		<p id="total" class="result total"></p>
+      	</div>
+      </div>
+      <div class="row mb-4">
+      	<div class="col-12">
+      		<button id="burn" class="burn">🔥</button>
+      	</div>
+      </div>
+      <div class="row">
+      	<div class="col-12">
+      		<h3>Indica tu comida del fin de semana</h3>
+      	</div>
+      	<div class="col-12 col-sm-6 col-lg-3 mb-2">
+      		<div class="row align-items-center" data-resourse="pizza">
+      			<div class="col"><button class="btn btn-warning subtract">-</button></div>
+      			<div class="col"><span class="emoji" title="pizza">🍕</span></div>
+      			<div class="col"><button class="btn btn-info add">+</button></div>
+      		</div>
+      	</div>
+      	<div class="col-12 col-sm-6 col-lg-3 mb-2">
+      		<div class="row align-items-center" data-resourse="coke">
+      			<div class="col"><button class="btn btn-warning subtract">-</button></div>
+      			<div class="col"><span class="emoji" title="coke">🥤</span></div>
+      			<div class="col"><button class="btn btn-info add">+</button></div>
+      		</div>
+      	</div>
+      	<div class="col-12 col-sm-6 col-lg-3 mb-2">
+      		<div class="row align-items-center" data-resourse="ginTonic">
+      			<div class="col"><button class="btn btn-warning subtract">-</button></div>
+      			<div class="col"><span class="emoji" title="ginTonic">🍸</span></div>
+      			<div class="col"><button class="btn btn-info add">+</button></div>
+      		</div>
+      	</div>
+      	<div class="col-12 col-sm-6 col-lg-3 mb-2">
+      		<div class="row align-items-center" data-resourse="beer">
+      			<div class="col"><button class="btn btn-warning subtract">-</button></div>
+      			<div class="col"><span class="emoji" title="beer">🍺</span></div>
+      			<div class="col"><button class="btn btn-info add">+</button></div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+  </main>
+<script src="../js/lessons/10.js" type="module"></script>
+</body>
+</html>

@@ -37,31 +37,24 @@ function handlerTrackCalls(obj) {
 
 			const method     = target[propKey];
 			const propExists = Object.keys(target).includes(propKey)
-    	// console.info({target, propKey, propExists})
-    	// console.info("I'm IN")
-    	// console.info(typeof method === 'function', method, !propExists)
-      
-
+			
       // we only do something special if we're working with a function
       // on the object. If the property isn't a function we can just return
       // it as normal.
       if ((typeof method === 'function' || typeof method === 'undefined') && !propExists) {
-    		// console.info("I'm IN 2")
 	      return function interceptedMethod(styles) {
 	      	return function (content) {
-	      		//console.info(styles, content)
 
 		      	const htmlReturn = `
 							<${propKey} style="${styles}">
 								${content}
 							</${propKey}>
 						`
-    				target[propKey] = htmlReturn
+						target[propKey] = htmlReturn
 	      		return htmlReturn
 	      	}
 	      }
       }
-      console.info("I'm HERE 3");
       return method
     }
   }
